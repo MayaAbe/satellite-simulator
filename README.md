@@ -48,7 +48,15 @@ pip install -r requirements.txt
 
 ### コードのスタイル
 
-このプロジェクトではPEP 8スタイルガイドに従います。コードをコミットする前に、flake8を使用してコードをチェックしてください。
+このプロジェクトでは[PEP 8](https://pep8-ja.readthedocs.io/ja/latest/)スタイルガイドに従います。コードをコミットする前に、flake8を使用してコードをチェックしてください。
+
+### ライブラリ管理
+
+ライブラリを追加した場合は他の開発者や環境でも同じ依存関係をインストールするために、`requirements.txt` ファイルを更新することが重要です。これは次のコマンドで行えます。
+
+```bash
+pip freeze > requirements.txt
+```
 
 ## 使用方法
 
